@@ -257,5 +257,6 @@ The Canvas API documentation can be found [here](https://canvas.instructure.com/
 
 
 README Changelog:
--	29/07/2015: Added Functionality list and example CSV layouts. Added better formatting for code. <br>
+-	31/07/2015: Adjusted folder structure to match new folder setup. Moved readme to root directory so it shows on Github preview.
+-	29/07/2015: Added Functionality list and example CSV layouts. Added better formatting for code.
 -	29/07/2015: Version 1
