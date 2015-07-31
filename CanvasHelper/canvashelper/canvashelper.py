@@ -40,6 +40,9 @@ def main():
 
 
 	all_apps = {
+		# Apps in list that are commented out are not in active use at our university
+		# Some of them are functional, but will be bug-prone
+		
 #		"Settings: Batch Change Time Zone":changetimezone,
 		"Course: Get Enrollment Report for Single Course":getstudentlist,
 		"Groups: Get Printable Course Groups Report":getgroupreport,
