@@ -32,4 +32,6 @@ setup(
         "pytz"
     ],
 
+    zip_safe=False
+
 )

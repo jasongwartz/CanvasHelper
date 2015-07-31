@@ -1,3 +1,6 @@
+#! /usr/bin/python
 from canvashelper import canvashelper
 
-canvashelper.main()
+if __name__ == "__main__":
+	canvashelper.main()
+	
