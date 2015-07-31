@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# I use this to copy new builds into a seperate directory for testing or deployment
+
 rm -r ../CH-new_build
 mkdir -p ../CH-new_build
 mkdir ../CH-new_build/CanvasHelper

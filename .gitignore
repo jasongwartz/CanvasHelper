@@ -1,7 +1,8 @@
 *.pyc
 *.txt
 *.command
-sensitive.json
+*.json
+
 *.csv
 
 # Created by https://www.gitignore.io
