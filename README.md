@@ -250,7 +250,7 @@ their files (usually CSV format) in `/output`.
 
 
 ### Credits
-Designed and developed by [Jason Gwartz](https://www.github.com/jasongtz) while at [Hult International Business School](http://www.hult.edu).
+Designed and developed by [Jason Gwartz](https://www.github.com/jasongwartz) while at [Hult International Business School](http://www.hult.edu).
 The Canvas API documentation can be found [here](https://canvas.instructure.com/doc/api/).
 
 ------------
