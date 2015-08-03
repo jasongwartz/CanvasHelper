@@ -64,7 +64,7 @@
 					<key>displayWarning</key>
 					<false/>
 					<key>explanationText</key>
-					<string>Click OK, then choose the location of the CanvasHelper code folder.</string>
+					<string>Click OK, then choose the location of the CanvasHelper “code” folder.</string>
 					<key>negativeTitle</key>
 					<string>Cancel</string>
 					<key>questionText</key>
@@ -687,21 +687,21 @@ osascript -e 'do shell script "sudo -H ./setup.sh" with administrator privileges
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>065CB428-4EE8-4F33-AD7D-5A3A1900FD7E</key>
-		<dict>
-			<key>from</key>
-			<string>EE1A3F5D-5FC1-473D-ACF4-506B9DC6DAA7 - EE1A3F5D-5FC1-473D-ACF4-506B9DC6DAA7</string>
-			<key>to</key>
-			<string>8A7A5992-7406-4A14-800D-35F5CEFB11EA - 8A7A5992-7406-4A14-800D-35F5CEFB11EA</string>
-		</dict>
-		<key>4D44BB50-2A7B-4EEA-8BE3-D8088447AF6B</key>
+		<key>757B592B-4C0E-49A4-A64A-9B86FE0453A2</key>
 		<dict>
 			<key>from</key>
 			<string>CB4ABFD7-2210-4C19-9B30-364993A0EA74 - CB4ABFD7-2210-4C19-9B30-364993A0EA74</string>
 			<key>to</key>
 			<string>EE1A3F5D-5FC1-473D-ACF4-506B9DC6DAA7 - EE1A3F5D-5FC1-473D-ACF4-506B9DC6DAA7</string>
 		</dict>
-		<key>801D1518-C612-4770-8E7D-0D237F21A0AB</key>
+		<key>A1CC5D39-BF34-4687-8668-70F9F3382A82</key>
+		<dict>
+			<key>from</key>
+			<string>EE1A3F5D-5FC1-473D-ACF4-506B9DC6DAA7 - EE1A3F5D-5FC1-473D-ACF4-506B9DC6DAA7</string>
+			<key>to</key>
+			<string>8A7A5992-7406-4A14-800D-35F5CEFB11EA - 8A7A5992-7406-4A14-800D-35F5CEFB11EA</string>
+		</dict>
+		<key>A29B09B7-2D85-4558-A085-4249AF08366F</key>
 		<dict>
 			<key>from</key>
 			<string>A4902829-B790-4AD5-98D7-6E8AD6207964 - A4902829-B790-4AD5-98D7-6E8AD6207964</string>

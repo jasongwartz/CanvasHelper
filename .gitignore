@@ -1,6 +1,5 @@
 *.pyc
 logs/*.txt
-
 *.command
 *.json
 
