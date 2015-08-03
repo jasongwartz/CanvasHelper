@@ -17,7 +17,7 @@ Current and future abilities of CanvasHelper include (italics for unstable/in de
 - *Changing notification preferences for students' communcation channels*
 - *Getting a per-student list of enrolled courses*
 
-
+CanvasHelper has been for and on OS X. That's not to say that other platforms won't work - just that I haven't tried them.
 
 
 Installation
@@ -124,7 +124,7 @@ Functionality
 Example CSV Layouts
 -----
 
-*Note: The CSV layouts for input are inflexible. Notably, some must include headers and some cannot include them. Many/most of the existing bugs are related to formatting of the CSV inputs. If you find any, let me know about them!*
+*Note: The CSV layouts for input are inflexible. Notably, some must include headers and some cannot include them. __If you're using Excel on a Mac, you must format the files as 'Windows Comma Seperated', otherwise you'll encounter a 'newline' error.__ Many/most of the existing bugs are related to formatting of the CSV inputs. If you find any, let me know about them!*
 
 ### Enrollment Report  
 >	*Includes and requires a header*

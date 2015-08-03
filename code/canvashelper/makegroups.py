@@ -20,7 +20,7 @@ def parse_teamdata(teamdata):
 	return all_students
 
 def sort_groups(parsed_data):
-	group_numbers = []
+	group_names = []
 	
 	print "Please type the header representing the chosen module:"
 	header = raw_input(">>> ")
@@ -29,25 +29,29 @@ def sort_groups(parsed_data):
 	
 	for student in parsed_data:
 		try:
-			if int(student[header]) not in group_numbers:
-				group_numbers.append(int(student[header]))
-		except:
-			pass	
-	number_of_groups = int(max(group_numbers))
+			groupname = "Group %s" % int(student[header]) # evaluate if student[header] can be int
+			if groupname not in group_names:
+				group_names.append(groupname)
+			student[header] = groupname
+
+		except ValueError:
+			if student[header] not in group_names:
+				group_names.append(student[header])
+
+	number_of_groups = len(group_names)
 
 	# Creates a dict like ----- {"1": [], "2": []}
-	groups = {}
-	for i in range(1, number_of_groups + 1):
-		groups[str(i)] = []
-
+	groups = {i:[] for i in group_names if i != ''}
 	for student in parsed_data:
-		try: 
+		if student[header] != '' and student[sis_header] != '':
 			groups[str(student[header])].append(student[sis_header])
 				# groups dict looks like ---     {group #:[sisid, sisid, sisid]}
 				# MAKE SURE that the field "SIS USER ID" matches the column header
-		except:
-			pass 	# Weeds out the " " entries
+		#except KeyError:
+		#	print "Incorrect headers."
+		#	sys.exit()
 	return groups
+
 
 def get_group_category(coursesis, params):
 	
@@ -90,8 +94,8 @@ def create_groups(groupcategory, groups, params):
 	
 	groupids = []
 	
-	for i in range(len(groups)):
-		params["name"] = "Group " + str(groups.keys()[i])
+	for key in groups.keys():
+		params["name"] = key
 
 		print "Creating group: " + params['name']
 
@@ -106,7 +110,7 @@ def create_groups(groupcategory, groups, params):
 def assign_groups(groupcategory, groups, params):
 	groupids = jg.api_list(url +"/api/v1/group_categories/%s/groups" \
 		% groupcategory, params = params).call()
-	groupids = {items['name'].strip("Group ") : items['id'] for items in groupids}
+	groupids = {items['name'] : items['id'] for items in groupids}
 
 	for name, group_id in groupids.items():
 		for student in groups[name]:
