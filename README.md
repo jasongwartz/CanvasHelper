@@ -17,7 +17,7 @@ Current and future abilities of CanvasHelper include (italics for unstable/in de
 - *Changing notification preferences for students' communcation channels*
 - *Getting a per-student list of enrolled courses*
 
-
+CanvasHelper has been for and on OS X. That's not to say that other platforms won't work - just that I haven't tried them.
 
 
 Installation
