@@ -46,6 +46,8 @@ as creating a shortcut in `/Applications`.*
 Authentication
 ------
 
+### Users
+
 The first time it is launched, CanvasHelper will prompt you to create and save your
 API access tokens. When you provide the website endpoint (which must be HTTPS, 
 e.g. https://example.test.instructure.com), a browser page will launch and ask for authorisation.
@@ -57,6 +59,13 @@ API access only needs to be authorised once, unless the tokens are revoked from 
 settings page. If you need to delete your saved tokens
 from CanvasHelper, or need to add new tokens, simply delete the file titled `sensitive.json`
 from the code folder, and upon next launch, CanvasHelper will prompt you to enter API tokens.
+
+### Developer Key
+If you're an institution that wants to use this software and don't have access to a devkey, feel free to send me a message to ask for use of mine. Developers will need to request a devkey from Instructure. 
+You'll need to create a `devkey.json` file in the `code/canvashelper` folder, with the following data:
+```json
+{"client_id":YOUR_CLIENT_ID, "client_secret":YOUR_CLIENT_SECRET}
+```
 
 
 Usage
