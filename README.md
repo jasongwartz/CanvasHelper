@@ -124,7 +124,7 @@ Functionality
 Example CSV Layouts
 -----
 
-*Note: The CSV layouts for input are inflexible. Notably, some must include headers and some cannot include them. Many/most of the existing bugs are related to formatting of the CSV inputs. If you find any, let me know about them!*
+*Note: The CSV layouts for input are inflexible. Notably, some must include headers and some cannot include them. __If you're using Excel on a Mac, you must format the files as 'Windows Comma Seperated', otherwise you'll encounter a 'newline' error.__ Many/most of the existing bugs are related to formatting of the CSV inputs. If you find any, let me know about them!*
 
 ### Enrollment Report  
 >	*Includes and requires a header*
