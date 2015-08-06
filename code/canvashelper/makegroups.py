@@ -15,7 +15,7 @@ def parse_teamdata(teamdata):
 		this_student = {}
 		for x in range(0, len(teamdata[0])): # len(teamdata[0]) == # of columns in the sheet
 			# Key = column's header		 :  value = cell value (column at student's line)
-			this_student[teamdata[0][x]] = teamdata[student][x].replace("Group ", '')
+			this_student[teamdata[0][x].lower()] = teamdata[student][x].replace("Group ", '')
 		all_students.append(this_student)
 	return all_students
 
@@ -23,9 +23,9 @@ def sort_groups(parsed_data):
 	group_names = []
 	
 	print "Please type the header representing the chosen module:"
-	header = raw_input(">>> ")
+	header = raw_input(">>> ").lower()
 	print "Please type the header representing the SIS ID:"
-	sis_header = raw_input(">>> ")
+	sis_header = raw_input(">>> ").lower()
 	
 	for student in parsed_data:
 		try:
