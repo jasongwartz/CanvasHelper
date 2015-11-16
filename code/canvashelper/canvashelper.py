@@ -7,7 +7,7 @@
 import time, sys, os
 import getstudentlist, makegroups, getgroupreport, adduser, notifications, changetimezone, scheduler
 import getstudentenrollment, makeactiongroups, getallenrollments, getenrollmentwithgroups
-import copycourse
+import copycourse, publisher, assignmentchecker
 import jgtools as jg
 
 class Logger(object):
@@ -55,6 +55,8 @@ def main():
 		"Course: Get Enrollment Reports for All Courses in a Term":getallenrollments,
 		"Course: Get Enrollment Report for Single Course with Groups":getenrollmentwithgroups,
 #		"Course: Create Courses and Copy from Template Shell":copycourse,
+		"Course: Check Publishing":publisher,
+		"Course: Check Assignment Submissions":assignmentchecker
 	}
 
 	group_apps = {
